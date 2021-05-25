@@ -140,7 +140,7 @@ $('document').ready(function(){
 		
 	$('#wish_message').click(function(){
 		 vw = ($(window).width())/4;
-		var vcount = (vw/2)/6;
+		var vcount = ($(window).width()/2)/6;
 		
 		$('#b1,#b2,#b3,#b4,#b5,#b6,#b7').stop();
 		$('#b1').attr('id','b11');
