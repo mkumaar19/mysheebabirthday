@@ -8,11 +8,11 @@ $('document').ready(function(){
 			 vw = $(window).width()/2;
 			$('#b1,#b2,#b3,#b4,#b5,#b6').stop();
 			$('#b11').animate({top:220, left: 0},500);
-			$('#b22').animate({top:240, left: 15%},500);
-			$('#b33').animate({top:240, left: 30%},500);
-			$('#b44').animate({top:240, left: 45%},500);
-			$('#b55').animate({top:240, left: 60%},500);
-			$('#b66').animate({top:240, left: 75%},500);
+			$('#b22').animate({top:240, left: 15},500);
+			$('#b33').animate({top:240, left: 30},500);
+			$('#b44').animate({top:240, left: 45},500);
+			$('#b55').animate({top:240, left: 60},500);
+			$('#b66').animate({top:240, left: 75},500);
 		});
 
 	$('#turn_on').click(function(){
