@@ -139,8 +139,9 @@ $('document').ready(function(){
 
 		
 	$('#wish_message').click(function(){
-		 vw = $(window).width()/2;
-
+		 vw = ($(window).width())/4;
+		var vcount = (vw/2)/6;
+		
 		$('#b1,#b2,#b3,#b4,#b5,#b6,#b7').stop();
 		$('#b1').attr('id','b11');
 		$('#b2').attr('id','b22')
@@ -149,9 +150,9 @@ $('document').ready(function(){
 		$('#b5').attr('id','b55')
 		$('#b6').attr('id','b66')
 		$('#b7').attr('id','b77')
-		$('#b11').animate({top:230, left: 0},500);
-		$('#b22').animate({top:240, left: '15%'},500);
-		$('#b33').animate({top:240, left: '30%'},500);
+		$('#b11').animate({top:240, left: vw},500);
+		$('#b22').animate({top:240, left: vw + vcount},500);
+		$('#b33').animate({top:240, left: vw + (vcount*2)},500);
 		$('#b44').animate({top:240, left: '45%'},500);
 		$('#b55').animate({top:240, left: '60%'},500);
 		$('#b66').animate({top:240, left: '75%'},500);
