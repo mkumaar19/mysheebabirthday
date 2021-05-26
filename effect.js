@@ -139,8 +139,8 @@ $('document').ready(function(){
 
 		
 	$('#wish_message').click(function(){
-		 vw = ($(window).width())/4;
-		var vcount = ($(window).width()/2)/6;
+		 vw = ($(window).width())/6;
+		
 		
 		$('#b1,#b2,#b3,#b4,#b5,#b6,#b7').stop();
 		$('#b1').attr('id','b11');
@@ -150,12 +150,12 @@ $('document').ready(function(){
 		$('#b5').attr('id','b55')
 		$('#b6').attr('id','b66')
 		$('#b7').attr('id','b77')
-		$('#b11').animate({top:240, left: vw},500);
-		$('#b22').animate({top:240, left: vw + vcount},500);
-		$('#b33').animate({top:240, left: vw + (vcount*2)},500);
-		$('#b44').animate({top:240, left: '45%'},500);
-		$('#b55').animate({top:240, left: '60%'},500);
-		$('#b66').animate({top:240, left: '75%'},500);
+		$('#b11').animate({top:240, left: 70 - vw},500);
+		$('#b22').animate({top:240, left: 70 + vw},500);
+		$('#b33').animate({top:240, left: (70 * 2) + vw},500);
+		$('#b44').animate({top:240, left: (70 * 3) + vw},500);
+		$('#b55').animate({top:240, left: (70 * 4) + vw},500);
+		$('#b66').animate({top:240, left: (70 * 5) + vw},500);
 		$('.balloons').css('opacity','0.9');
 		$('.balloons h2').fadeIn(3000);
 		$(this).fadeOut('slow').delay(3000).promise().done(function(){
